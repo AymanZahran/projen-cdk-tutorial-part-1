@@ -52,14 +52,18 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
 });
 
-project.gitpod.addDockerImage({
-  image: "jsii/superchain:1-buster-slim-node14"
-})
+// project.gitpod.addDockerImage({
+//   image: "jsii/superchain:1-buster-slim-node14"
+// })
 
-project.gitpod.addCustomTask({
-  name: "Install Projen",
-  command: "sudo npm install -g projen && echo 'alias pj=\"npx projen\"' >> ~/.bashrc && projen completion >> ~/.bashrc"
-});
+// project.gitpod.addCustomTask({
+//   name: "Install Projen",
+//   command: "sudo npm install -g projen && echo 'alias pj=\"npx projen\"' >> ~/.bashrc && projen completion >> ~/.bashrc"
+// });
+
+project.gitpod.addDockerImage({
+  dockerFile: ".gitpod.Dockerfile"
+})
 
 
 project.synth();
