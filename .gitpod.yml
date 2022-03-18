@@ -1,0 +1,2 @@
+image: aymanzahran/projen-cdk-tutorial-part1:latest
+  # file: .gitpod.Dockerfile
