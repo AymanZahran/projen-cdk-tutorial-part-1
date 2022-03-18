@@ -8,6 +8,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/AymanZahran/projen-cdk-tutorial-part-1.git',
   description: 'This package is for Projen Demo',
 
+  // Add gitpod.yml
+  gitpod: true,
+
+  // Generate API Doc
   docgen: true,
   docgenFilePath: 'API.md',
 
@@ -47,4 +51,15 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // },
 
 });
+
+project.gitpod.addDockerImage({
+  image: "jsii/superchain:1-buster-slim-node14"
+})
+
+project.gitpod.addCustomTask({
+  name: "Install Projen",
+  command: "sudo npm install -g projen && echo 'alias pj=\"npx projen\"' >> ~/.bashrc && projen completion >> ~/.bashrc"
+});
+
+
 project.synth();
