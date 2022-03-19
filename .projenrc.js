@@ -66,6 +66,7 @@ function ts(path) {
   return src;
 }
 
+// Ecs Construct
 const EcsConstructInterface = 'MyEcsProps';
 const EcsConstructConstructor = 'MyEcsConstruct';
 const EcsConstruct = ts('src/index.ts');
@@ -113,6 +114,7 @@ EcsConstruct.close('});');
 EcsConstruct.close('}');
 EcsConstruct.close('}');
 
+//Dummy Test
 const DummyTest = 'DummyTest';
 const Test = ts('test/hello.test.ts');
 
