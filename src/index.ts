@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as ecs_patterns from 'aws-cdk-lib/aws-ecs-patterns';
 import { Construct } from 'constructs';
-import path from 'path';
+import * as path from 'path';
 export interface MyEcsProps {
   readonly maxAzs: number;
   readonly desiredCount: number;
