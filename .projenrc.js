@@ -57,12 +57,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
 });
 
 project.gitpod.addDockerImage({
-  image: "jsii/superchain:1-buster-slim-node14"
+  image: 'jsii/superchain:1-buster-slim-node14'
 });
 
 project.gitpod.addCustomTask({
-  name: "InstallProjen",
-  command: `sudo npm install -g projen && echo 'alias pj="npx projen"' >> ~/.bashrc && projen completion >> ~/.bashrc`,
+  name: 'ConfigAlias',
+  command: 'echo \'alias pj="npx projen"\' >> ~/.bashrc && echo \'alias cdk="npx cdk"\' >> ~/.bashrc',
 });
 
 project.gitpod.addVscodeExtensions(
