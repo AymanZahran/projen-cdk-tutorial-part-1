@@ -1,6 +1,5 @@
 {
-  "name": "ecs-package",
-  "description": "This package is for Projen Demo",
+  "name": "projen-cdk-tutorial-part-1",
   "repository": {
     "type": "git",
     "url": "https://github.com/AymanZahran/projen-cdk-tutorial-part-1.git"
@@ -17,9 +16,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
-    "package:dotnet": "npx projen package:dotnet",
     "package:js": "npx projen package:js",
-    "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
@@ -116,16 +113,7 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {
-      "python": {
-        "distName": "ecs-dist",
-        "module": "ecs-mod"
-      },
-      "dotnet": {
-        "namespace": "userorg.userns",
-        "packageId": "userpackages.ecspackage"
-      }
-    },
+    "targets": {},
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"

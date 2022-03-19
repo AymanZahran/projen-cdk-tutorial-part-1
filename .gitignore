@@ -4,8 +4,6 @@
 !/.projen/deps.json
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
-!/.gitpod.yml
-!/.github/workflows/auto-approve.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -51,6 +49,4 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
-!/src/index.ts
-!/test/hello.test.ts
 !/.github/workflows/upgrade-main.yml
