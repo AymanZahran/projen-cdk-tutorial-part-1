@@ -122,8 +122,8 @@
         "module": "ecs-mod"
       },
       "dotnet": {
-        "namespace": "ecs-org.esc-ns",
-        "packageId": "ecs-package.ecs-packagename"
+        "namespace": "userorg.userns",
+        "packageId": "userpackages.ecspackage"
       }
     },
     "tsc": {

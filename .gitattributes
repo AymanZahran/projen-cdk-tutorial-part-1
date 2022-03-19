@@ -20,5 +20,6 @@
 /LICENSE linguist-generated
 /package.json linguist-generated
 /src/index.ts linguist-generated
+/test/hello.test.ts linguist-generated
 /tsconfig.dev.json linguist-generated
 /yarn.lock linguist-generated

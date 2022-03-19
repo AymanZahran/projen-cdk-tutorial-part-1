@@ -39,8 +39,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   // Publish to Nugget
   publishToNuget: {
-    dotNetNamespace: 'ecs-org.esc-ns',
-    packageId: 'ecs-package.ecs-packagename',
+    dotNetNamespace: 'userorg.userns',
+    packageId: 'userpackages.ecspackage',
   },
 
   // // Publish to Maven
@@ -105,5 +105,12 @@ EcsConstruct.close('});');
 
 EcsConstruct.close('}');
 EcsConstruct.close('}');
+
+const DummyTest = 'DummyTest';
+const Test = ts('test/hello.test.ts');
+
+Test.open(`test('${ DummyTest }', () => {`);
+Test.line('expect(true).toBe(true);');
+Test.close('});');
 
 project.synth();
