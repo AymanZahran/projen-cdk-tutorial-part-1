@@ -52,5 +52,5 @@ junit.xml
 tsconfig.json
 !/API.md
 !/src/index.ts
-!/test/hello.test.ts
+!/test/main.test.ts
 !/.github/workflows/upgrade-main.yml

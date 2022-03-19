@@ -127,7 +127,7 @@ EcsConstruct.close('}');
 
 //Dummy Test
 const DummyTest = 'DummyTest';
-const Test = ts('test/hello.test.ts');
+const Test = ts('test/main.test.ts');
 
 Test.open('test(\'${ DummyTest }\', () => {');
 Test.line('expect(true).toBe(true);');
