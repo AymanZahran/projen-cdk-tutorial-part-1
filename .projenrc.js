@@ -129,7 +129,7 @@ EcsConstruct.close('}');
 const DummyTest = 'DummyTest';
 const Test = ts('test/hello.test.ts');
 
-Test.open(`test('${ DummyTest }', () => {`);
+Test.open('test(\'${ DummyTest }\', () => {');
 Test.line('expect(true).toBe(true);');
 Test.close('});');
 
