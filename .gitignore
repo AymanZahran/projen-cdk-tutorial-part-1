@@ -51,4 +51,5 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
+!/src/index.ts
 !/.github/workflows/upgrade-main.yml

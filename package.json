@@ -1,5 +1,5 @@
 {
-  "name": "aymanzahranpackage",
+  "name": "ecs-package",
   "description": "This package is for Projen Demo",
   "repository": {
     "type": "git",
@@ -118,12 +118,12 @@
     "outdir": "dist",
     "targets": {
       "python": {
-        "distName": "aymanzahrandist",
-        "module": "aymanzahranmod"
+        "distName": "ecs-dist",
+        "module": "ecs-mod"
       },
       "dotnet": {
-        "namespace": "aymanorg.aymanns",
-        "packageId": "aymanpackage.aymanpackagename"
+        "namespace": "ecs-org.esc-ns",
+        "packageId": "ecs-package.ecs-packagename"
       }
     },
     "tsc": {
