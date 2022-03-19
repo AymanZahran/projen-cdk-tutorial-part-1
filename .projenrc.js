@@ -74,10 +74,15 @@ EcsConstruct.line('import * as ec2 from \'aws-cdk-lib/aws-ec2\';');
 EcsConstruct.line('import * as ecs from \'aws-cdk-lib/aws-ecs\';');
 EcsConstruct.line('import * as ecs_patterns from \'aws-cdk-lib/aws-ecs-patterns\';');
 EcsConstruct.line('import { Construct } from \'constructs\';');
+EcsConstruct.line(`import path from 'path';`);
 
 EcsConstruct.open(`export interface ${ EcsConstructInterface } {`);
-EcsConstruct.line('readonly numberOfAzs: number;');
-EcsConstruct.line('readonly dockerfileAsset: string;');
+EcsConstruct.line('readonly maxAzs: number;');
+EcsConstruct.line('readonly desiredCount: number;');
+EcsConstruct.line('readonly cpu: number;');
+EcsConstruct.line('readonly memoryLimitMiB: number;');
+EcsConstruct.line('readonly dockerDirAsset: string;');
+EcsConstruct.line('readonly dockerFileAsset: string;');
 EcsConstruct.close('}');
 
 EcsConstruct.open(`export class ${ EcsConstructConstructor } extends Construct {`);
@@ -85,7 +90,7 @@ EcsConstruct.open(`constructor(scope: Construct, id: string, props: ${ EcsConstr
 EcsConstruct.line('super(scope, id);');
 
 EcsConstruct.open('const vpc = new ec2.Vpc(this, \'MyVpc\', {');
-EcsConstruct.line('maxAzs: props.numberOfAzs,');
+EcsConstruct.line('maxAzs: props.maxAzs,');
 EcsConstruct.close('});');
 
 EcsConstruct.open('const cluster = new ecs.Cluster(this, \'MyCluster\', {');
@@ -94,12 +99,14 @@ EcsConstruct.close('});');
 
 EcsConstruct.open('new ecs_patterns.ApplicationLoadBalancedFargateService(this, \'MyFargateService\', {');
 EcsConstruct.line('cluster: cluster,');
-EcsConstruct.line('cpu: 512,');
-EcsConstruct.line('desiredCount: 6,');
+EcsConstruct.line('desiredCount: props.desiredCount,');
+EcsConstruct.line('cpu: props.cpu,');
+EcsConstruct.line('memoryLimitMiB: props.memoryLimitMiB,');
 EcsConstruct.open('taskImageOptions: {');
-EcsConstruct.line('image: ecs.ContainerImage.fromAsset(props.dockerfileAsset),');
+EcsConstruct.open(`image: ecs.ContainerImage.fromAsset(path.resolve(__dirname, props.dockerDirAsset), {`);
+EcsConstruct.line(`file: props.dockerFileAsset,`);
+EcsConstruct.close('})');
 EcsConstruct.close('},');
-EcsConstruct.line('memoryLimitMiB: 2048,');
 EcsConstruct.line('publicLoadBalancer: true,');
 EcsConstruct.close('});');
 
