@@ -4,16 +4,16 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as ecs_patterns from 'aws-cdk-lib/aws-ecs-patterns';
 import { Construct } from 'constructs';
-export interface IMyEcsProps {
-  maxAzs: number;
-  desiredCount: number;
-  cpu: number;
-  memoryLimitMiB: number;
-  dockerDirAsset: string;
-  dockerFileAsset: string;
+export interface MyEcsProps {
+  readonly maxAzs: number;
+  readonly desiredCount: number;
+  readonly cpu: number;
+  readonly memoryLimitMiB: number;
+  readonly dockerDirAsset: string;
+  readonly dockerFileAsset: string;
 }
 export class MyEcsConstruct extends Construct {
-  constructor(scope: Construct, id: string, props: IMyEcsProps) {
+  constructor(scope: Construct, id: string, props: MyEcsProps) {
     super(scope, id);
     const vpc = new ec2.Vpc(this, 'MyVpc', {
       maxAzs: props.maxAzs,
