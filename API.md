@@ -9,14 +9,14 @@
 ```typescript
 import { MyEcsConstruct } from 'ecs-package'
 
-new MyEcsConstruct(scope: Construct, id: string, props: MyEcsProps)
+new MyEcsConstruct(scope: Construct, id: string, props: IMyEcsProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#ecs-package.MyEcsConstruct.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
 | <code><a href="#ecs-package.MyEcsConstruct.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#ecs-package.MyEcsProps">MyEcsProps</a></code> | *No description.* |
+| <code><a href="#ecs-package.MyEcsConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#ecs-package.IMyEcsProps">IMyEcsProps</a></code> | *No description.* |
 
 ---
 
@@ -34,7 +34,7 @@ new MyEcsConstruct(scope: Construct, id: string, props: MyEcsProps)
 
 ##### `props`<sup>Required</sup> <a name="props" id="ecs-package.MyEcsConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#ecs-package.MyEcsProps">MyEcsProps</a>
+- *Type:* <a href="#ecs-package.IMyEcsProps">IMyEcsProps</a>
 
 ---
 
@@ -101,42 +101,29 @@ The tree node.
 ---
 
 
-## Structs <a name="Structs" id="Structs"></a>
 
-### MyEcsProps <a name="MyEcsProps" id="ecs-package.MyEcsProps"></a>
 
-#### Initializer <a name="Initializer" id="ecs-package.MyEcsProps.Initializer"></a>
+## Protocols <a name="Protocols" id="Protocols"></a>
 
-```typescript
-import { MyEcsProps } from 'ecs-package'
+### IMyEcsProps <a name="IMyEcsProps" id="ecs-package.IMyEcsProps"></a>
 
-const myEcsProps: MyEcsProps = { ... }
-```
+- *Implemented By:* <a href="#ecs-package.IMyEcsProps">IMyEcsProps</a>
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#ecs-package.MyEcsProps.property.dockerDirAsset">dockerDirAsset</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.cpu">cpu</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.desiredCount">desiredCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.dockerFileAsset">dockerFileAsset</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.maxAzs">maxAzs</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.memoryLimitMiB">memoryLimitMiB</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#ecs-package.IMyEcsProps.property.cpu">cpu</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#ecs-package.IMyEcsProps.property.desiredCount">desiredCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#ecs-package.IMyEcsProps.property.dockerDirAsset">dockerDirAsset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#ecs-package.IMyEcsProps.property.dockerFileAsset">dockerFileAsset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#ecs-package.IMyEcsProps.property.maxAzs">maxAzs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#ecs-package.IMyEcsProps.property.memoryLimitMiB">memoryLimitMiB</a></code> | <code>number</code> | *No description.* |
 
 ---
 
-##### `dockerDirAsset`<sup>Required</sup> <a name="dockerDirAsset" id="ecs-package.MyEcsProps.property.dockerDirAsset"></a>
-
-```typescript
-public readonly dockerDirAsset: string;
-```
-
-- *Type:* string
-
----
-
-##### `cpu`<sup>Optional</sup> <a name="cpu" id="ecs-package.MyEcsProps.property.cpu"></a>
+##### `cpu`<sup>Required</sup> <a name="cpu" id="ecs-package.IMyEcsProps.property.cpu"></a>
 
 ```typescript
 public readonly cpu: number;
@@ -146,7 +133,7 @@ public readonly cpu: number;
 
 ---
 
-##### `desiredCount`<sup>Optional</sup> <a name="desiredCount" id="ecs-package.MyEcsProps.property.desiredCount"></a>
+##### `desiredCount`<sup>Required</sup> <a name="desiredCount" id="ecs-package.IMyEcsProps.property.desiredCount"></a>
 
 ```typescript
 public readonly desiredCount: number;
@@ -156,7 +143,17 @@ public readonly desiredCount: number;
 
 ---
 
-##### `dockerFileAsset`<sup>Optional</sup> <a name="dockerFileAsset" id="ecs-package.MyEcsProps.property.dockerFileAsset"></a>
+##### `dockerDirAsset`<sup>Required</sup> <a name="dockerDirAsset" id="ecs-package.IMyEcsProps.property.dockerDirAsset"></a>
+
+```typescript
+public readonly dockerDirAsset: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dockerFileAsset`<sup>Required</sup> <a name="dockerFileAsset" id="ecs-package.IMyEcsProps.property.dockerFileAsset"></a>
 
 ```typescript
 public readonly dockerFileAsset: string;
@@ -166,7 +163,7 @@ public readonly dockerFileAsset: string;
 
 ---
 
-##### `maxAzs`<sup>Optional</sup> <a name="maxAzs" id="ecs-package.MyEcsProps.property.maxAzs"></a>
+##### `maxAzs`<sup>Required</sup> <a name="maxAzs" id="ecs-package.IMyEcsProps.property.maxAzs"></a>
 
 ```typescript
 public readonly maxAzs: number;
@@ -176,7 +173,7 @@ public readonly maxAzs: number;
 
 ---
 
-##### `memoryLimitMiB`<sup>Optional</sup> <a name="memoryLimitMiB" id="ecs-package.MyEcsProps.property.memoryLimitMiB"></a>
+##### `memoryLimitMiB`<sup>Required</sup> <a name="memoryLimitMiB" id="ecs-package.IMyEcsProps.property.memoryLimitMiB"></a>
 
 ```typescript
 public readonly memoryLimitMiB: number;
@@ -185,6 +182,4 @@ public readonly memoryLimitMiB: number;
 - *Type:* number
 
 ---
-
-
 

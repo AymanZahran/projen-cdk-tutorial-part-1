@@ -78,7 +78,7 @@ function ts(path) {
 }
 
 // Ecs Construct
-const EcsConstructInterface = 'MyEcsProps';
+const EcsConstructInterface = 'IMyEcsProps';
 const EcsConstructConstructor = 'MyEcsConstruct';
 const EcsConstruct = ts('src/index.ts');
 
@@ -89,12 +89,12 @@ EcsConstruct.line('import * as ecs_patterns from \'aws-cdk-lib/aws-ecs-patterns\
 EcsConstruct.line('import { Construct } from \'constructs\';');
 
 EcsConstruct.open(`export interface ${ EcsConstructInterface } {`);
-EcsConstruct.line('readonly maxAzs?: number;');
-EcsConstruct.line('readonly desiredCount?: number;');
-EcsConstruct.line('readonly cpu?: number;');
-EcsConstruct.line('readonly memoryLimitMiB?: number;');
-EcsConstruct.line('readonly dockerDirAsset: string;');
-EcsConstruct.line('readonly dockerFileAsset?: string;');
+EcsConstruct.line('maxAzs: number;');
+EcsConstruct.line('desiredCount: number;');
+EcsConstruct.line('cpu: number;');
+EcsConstruct.line('memoryLimitMiB: number;');
+EcsConstruct.line('dockerDirAsset: string;');
+EcsConstruct.line('dockerFileAsset: string;');
 EcsConstruct.close('}');
 
 EcsConstruct.open(`export class ${ EcsConstructConstructor } extends Construct {`);
