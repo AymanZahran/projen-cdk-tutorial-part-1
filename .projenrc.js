@@ -89,12 +89,12 @@ EcsConstruct.line('import * as ecs_patterns from \'aws-cdk-lib/aws-ecs-patterns\
 EcsConstruct.line('import { Construct } from \'constructs\';');
 
 EcsConstruct.open(`export interface ${ EcsConstructInterface } {`);
-EcsConstruct.line('readonly maxAzs: number;');
-EcsConstruct.line('readonly desiredCount: number;');
-EcsConstruct.line('readonly cpu: number;');
-EcsConstruct.line('readonly memoryLimitMiB: number;');
+EcsConstruct.line('readonly maxAzs?: number;');
+EcsConstruct.line('readonly desiredCount?: number;');
+EcsConstruct.line('readonly cpu?: number;');
+EcsConstruct.line('readonly memoryLimitMiB?: number;');
 EcsConstruct.line('readonly dockerDirAsset: string;');
-EcsConstruct.line('readonly dockerFileAsset: string;');
+EcsConstruct.line('readonly dockerFileAsset?: string;');
 EcsConstruct.close('}');
 
 EcsConstruct.open(`export class ${ EcsConstructConstructor } extends Construct {`);

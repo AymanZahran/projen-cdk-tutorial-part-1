@@ -117,32 +117,12 @@ const myEcsProps: MyEcsProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#ecs-package.MyEcsProps.property.dockerDirAsset">dockerDirAsset</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#ecs-package.MyEcsProps.property.cpu">cpu</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#ecs-package.MyEcsProps.property.desiredCount">desiredCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.dockerDirAsset">dockerDirAsset</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#ecs-package.MyEcsProps.property.dockerFileAsset">dockerFileAsset</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#ecs-package.MyEcsProps.property.maxAzs">maxAzs</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#ecs-package.MyEcsProps.property.memoryLimitMiB">memoryLimitMiB</a></code> | <code>number</code> | *No description.* |
-
----
-
-##### `cpu`<sup>Required</sup> <a name="cpu" id="ecs-package.MyEcsProps.property.cpu"></a>
-
-```typescript
-public readonly cpu: number;
-```
-
-- *Type:* number
-
----
-
-##### `desiredCount`<sup>Required</sup> <a name="desiredCount" id="ecs-package.MyEcsProps.property.desiredCount"></a>
-
-```typescript
-public readonly desiredCount: number;
-```
-
-- *Type:* number
 
 ---
 
@@ -156,7 +136,27 @@ public readonly dockerDirAsset: string;
 
 ---
 
-##### `dockerFileAsset`<sup>Required</sup> <a name="dockerFileAsset" id="ecs-package.MyEcsProps.property.dockerFileAsset"></a>
+##### `cpu`<sup>Optional</sup> <a name="cpu" id="ecs-package.MyEcsProps.property.cpu"></a>
+
+```typescript
+public readonly cpu: number;
+```
+
+- *Type:* number
+
+---
+
+##### `desiredCount`<sup>Optional</sup> <a name="desiredCount" id="ecs-package.MyEcsProps.property.desiredCount"></a>
+
+```typescript
+public readonly desiredCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dockerFileAsset`<sup>Optional</sup> <a name="dockerFileAsset" id="ecs-package.MyEcsProps.property.dockerFileAsset"></a>
 
 ```typescript
 public readonly dockerFileAsset: string;
@@ -166,7 +166,7 @@ public readonly dockerFileAsset: string;
 
 ---
 
-##### `maxAzs`<sup>Required</sup> <a name="maxAzs" id="ecs-package.MyEcsProps.property.maxAzs"></a>
+##### `maxAzs`<sup>Optional</sup> <a name="maxAzs" id="ecs-package.MyEcsProps.property.maxAzs"></a>
 
 ```typescript
 public readonly maxAzs: number;
@@ -176,7 +176,7 @@ public readonly maxAzs: number;
 
 ---
 
-##### `memoryLimitMiB`<sup>Required</sup> <a name="memoryLimitMiB" id="ecs-package.MyEcsProps.property.memoryLimitMiB"></a>
+##### `memoryLimitMiB`<sup>Optional</sup> <a name="memoryLimitMiB" id="ecs-package.MyEcsProps.property.memoryLimitMiB"></a>
 
 ```typescript
 public readonly memoryLimitMiB: number;

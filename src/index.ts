@@ -5,12 +5,12 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as ecs_patterns from 'aws-cdk-lib/aws-ecs-patterns';
 import { Construct } from 'constructs';
 export interface MyEcsProps {
-  readonly maxAzs: number;
-  readonly desiredCount: number;
-  readonly cpu: number;
-  readonly memoryLimitMiB: number;
+  readonly maxAzs?: number;
+  readonly desiredCount?: number;
+  readonly cpu?: number;
+  readonly memoryLimitMiB?: number;
   readonly dockerDirAsset: string;
-  readonly dockerFileAsset: string;
+  readonly dockerFileAsset?: string;
 }
 export class MyEcsConstruct extends Construct {
   constructor(scope: Construct, id: string, props: MyEcsProps) {
