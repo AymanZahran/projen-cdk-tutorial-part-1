@@ -10,7 +10,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   // Add License
   licensed: true,
-  license: "Apache-2.0",
+  license: 'Apache-2.0',
 
   // Add gitpod.yml
   gitpod: true,
@@ -57,23 +57,23 @@ const project = new awscdk.AwsCdkConstructLibrary({
 });
 
 project.gitpod.addDockerImage({
-  dockerFile: ".gitpod.Dockerfile"
-})
+  dockerFile: '.gitpod.Dockerfile',
+});
 
 function ts(path) {
   const src = new SourceCode(project, path);
   src.line('// ${FileBase.PROJEN_MARKER}');
-  return src
+  return src;
 }
 
 const EcsConstructInterface = 'MyEcsProps';
 const EcsConstructConstructor = 'MyEcsConstruct';
 const EcsConstruct = ts('src/index.ts');
 
-EcsConstruct.line(`import * as ec2 from 'aws-cdk-lib/aws-ec2';`);
-EcsConstruct.line(`import * as ecs from 'aws-cdk-lib/aws-ecs';`);
-EcsConstruct.line(`import * as ecs_patterns from 'aws-cdk-lib/aws-ecs-patterns';`);
-EcsConstruct.line(`import { Construct } from 'constructs';`);
+EcsConstruct.line('import * as ec2 from \'aws-cdk-lib/aws-ec2\';');
+EcsConstruct.line('import * as ecs from \'aws-cdk-lib/aws-ecs\';');
+EcsConstruct.line('import * as ecs_patterns from \'aws-cdk-lib/aws-ecs-patterns\';');
+EcsConstruct.line('import { Construct } from \'constructs\';');
 
 EcsConstruct.open(`export interface ${ EcsConstructInterface } {`);
 EcsConstruct.line('readonly numberOfAzs: number;');
@@ -82,25 +82,25 @@ EcsConstruct.close('}');
 
 EcsConstruct.open(`export class ${ EcsConstructConstructor } extends Construct {`);
 EcsConstruct.open(`constructor(scope: Construct, id: string, props: ${ EcsConstructInterface }) {`);
-EcsConstruct.line(`super(scope, id);`);
+EcsConstruct.line('super(scope, id);');
 
-EcsConstruct.open(`const vpc = new ec2.Vpc(this, 'MyVpc', {`);
-EcsConstruct.line(`maxAzs: props.numberOfAzs,`);
+EcsConstruct.open('const vpc = new ec2.Vpc(this, \'MyVpc\', {');
+EcsConstruct.line('maxAzs: props.numberOfAzs,');
 EcsConstruct.close('});');
 
-EcsConstruct.open(`const cluster = new ecs.Cluster(this, 'MyCluster', {`);
-EcsConstruct.line(`vpc: vpc,`);
+EcsConstruct.open('const cluster = new ecs.Cluster(this, \'MyCluster\', {');
+EcsConstruct.line('vpc: vpc,');
 EcsConstruct.close('});');
 
-EcsConstruct.open(`new ecs_patterns.ApplicationLoadBalancedFargateService(this, 'MyFargateService', {`);
-EcsConstruct.line(`cluster: cluster,`);
-EcsConstruct.line(`cpu: 512,`);
-EcsConstruct.line(`desiredCount: 6,`);
-EcsConstruct.open(`taskImageOptions: {`);
-EcsConstruct.line(`image: ecs.ContainerImage.fromAsset(props.dockerfileAsset),`);
-EcsConstruct.close(`},`);    
-EcsConstruct.line(`memoryLimitMiB: 2048,`);
-EcsConstruct.line(`publicLoadBalancer: true,`);
+EcsConstruct.open('new ecs_patterns.ApplicationLoadBalancedFargateService(this, \'MyFargateService\', {');
+EcsConstruct.line('cluster: cluster,');
+EcsConstruct.line('cpu: 512,');
+EcsConstruct.line('desiredCount: 6,');
+EcsConstruct.open('taskImageOptions: {');
+EcsConstruct.line('image: ecs.ContainerImage.fromAsset(props.dockerfileAsset),');
+EcsConstruct.close('},');
+EcsConstruct.line('memoryLimitMiB: 2048,');
+EcsConstruct.line('publicLoadBalancer: true,');
 EcsConstruct.close('});');
 
 EcsConstruct.close('}');
