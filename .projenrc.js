@@ -57,7 +57,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 });
 
 project.gitpod.addDockerImage({
-  image: 'jsii/superchain:1-buster-slim-node14'
+  image: 'jsii/superchain:1-buster-slim-node14',
 });
 
 project.gitpod.addCustomTask({
