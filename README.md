@@ -18,3 +18,27 @@
 [CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
 
 ## Part 1
+
+
+## References
+- [CDK Getting Started]
+- [CDK API Reference]
+- [CDK Workshop]
+- [CDK Patterns]
+- [CDK Construct Hub]
+- [Projen]
+- [Projen API Reference]
+- [Projen AWS CDK Construct Library]
+- [Projen AWS CDK Applications]
+- [Publish CDK Constructs]
+
+[CDK Getting Started]: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
+[CDK API Reference]: https://docs.aws.amazon.com/cdk/api/v2/
+[CDK Workshop]: https://cdkworkshop.com/
+[CDK Patterns]: https://cdkpatterns.com/
+[CDK Construct Hub]: https://constructs.dev/
+[Projen]: https://github.com/projen/projen
+[Projen API Reference]: https://projen.io/api/API.html
+[Projen AWS CDK Construct Library]: https://projen.io/awscdk-construct.html
+[Projen AWS CDK Applications]: https://projen.io/awscdk-apps.html
+[Publish CDK Constructs]: https://github.com/seeebiii/projen-test
