@@ -82,11 +82,11 @@ const EcsConstructInterface = 'MyEcsProps';
 const EcsConstructConstructor = 'MyEcsConstruct';
 const EcsConstruct = ts('src/index.ts');
 
+EcsConstruct.line('import * as path from \'path\';');
 EcsConstruct.line('import * as ec2 from \'aws-cdk-lib/aws-ec2\';');
 EcsConstruct.line('import * as ecs from \'aws-cdk-lib/aws-ecs\';');
 EcsConstruct.line('import * as ecs_patterns from \'aws-cdk-lib/aws-ecs-patterns\';');
 EcsConstruct.line('import { Construct } from \'constructs\';');
-EcsConstruct.line('import * as path from \'path\';');
 
 EcsConstruct.open(`export interface ${ EcsConstructInterface } {`);
 EcsConstruct.line('readonly maxAzs: number;');
@@ -117,7 +117,7 @@ EcsConstruct.line('memoryLimitMiB: props.memoryLimitMiB,');
 EcsConstruct.open('taskImageOptions: {');
 EcsConstruct.open('image: ecs.ContainerImage.fromAsset(path.resolve(__dirname, props.dockerDirAsset), {');
 EcsConstruct.line('file: props.dockerFileAsset,');
-EcsConstruct.close('})');
+EcsConstruct.close('}),');
 EcsConstruct.close('},');
 EcsConstruct.line('publicLoadBalancer: true,');
 EcsConstruct.close('});');
