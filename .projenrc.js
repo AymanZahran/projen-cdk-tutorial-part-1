@@ -151,6 +151,7 @@ README.line('[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready-
 README.line('[![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml)');
 
 README.line('## Part 1');
+README.line('![projen-cdk-tutorial-part-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1.png)')
 README.line('## References');
 README.line('- [CDK Getting Started]');
 README.line('- [CDK API Reference]');
