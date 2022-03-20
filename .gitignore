@@ -5,7 +5,6 @@
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
 !/.gitpod.yml
-!/.github/workflows/auto-approve.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -54,4 +53,4 @@ tsconfig.json
 !/src/index.ts
 !/test/main.test.ts
 !/./README.md
-!/.github/workflows/upgrade-main.yml
+!/.github/workflows/upgrade-master.yml
