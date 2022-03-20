@@ -45,9 +45,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   // Publish to Maven
   publishToMaven: {
-    mavenGroupId: 'io.github.aymanzahran',
+    mavenGroupId: 'com.github.aymanzahran',
     mavenArtifactId: 'fastfargate',
-    javaPackage: 'io.github.aymanzahran.fastfargate',
+    javaPackage: 'com.github.aymanzahran.fastfargate',
   },
 });
 
