@@ -128,6 +128,7 @@ Test.open('test(\'${ DummyTest }\', () => {');
 Test.line('expect(true).toBe(true);');
 Test.close('});');
 
+// Add README.md
 function readme(path) {
   const src = new SourceCode(project, path);
   return src;
