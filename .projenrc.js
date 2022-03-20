@@ -23,6 +23,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   releaseEveryCommit: true,
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ['AymanZahran'] },
+  releaseWorkflow: true,
 
   // Publish to Git Release
   release: true,
