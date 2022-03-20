@@ -43,12 +43,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
     packageId: 'fastfargate',
   },
 
-//   // Publish to Maven
-//   publishToMaven: {
-//     mavenGroupId: 'io.github.AymanZahran',
-//     mavenArtifactId: 'fastfargate',
-//     javaPackage: 'fastfargate',
-//   },
+  // Publish to Maven
+  publishToMaven: {
+    mavenGroupId: 'io.github.AymanZahran',
+    mavenArtifactId: 'fastfargate',
+    javaPackage: 'fastfargate',
+  },
 });
 
 project.gitpod.addDockerImage({
