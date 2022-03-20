@@ -53,4 +53,5 @@ tsconfig.json
 !/API.md
 !/src/index.ts
 !/test/main.test.ts
+!/./README.md
 !/.github/workflows/upgrade-main.yml

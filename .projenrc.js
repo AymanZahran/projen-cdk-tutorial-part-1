@@ -39,7 +39,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   // Publish to Nugget
   publishToNuget: {
-    dotNetNamespace: 'userorg.userns',
+    dotNetNamespace: 'fastfargate',
     packageId: 'fastfargate',
   },
 
@@ -127,5 +127,54 @@ const Test = ts('test/main.test.ts');
 Test.open('test(\'${ DummyTest }\', () => {');
 Test.line('expect(true).toBe(true);');
 Test.close('});');
+
+function readme(path) {
+  const src = new SourceCode(project, path);
+  return src;
+}
+
+const README = readme('./README.md');
+README.line('#### Part1 ([CDK Construct Library])');
+README.line('[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)');
+README.line('[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-1)');
+README.line('[![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-1/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-1/actions/workflows/build.yml)');
+README.line('[![release](https://github.com/AymanZahran/projen-cdk-tutorial-part-1/actions/workflows/release.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-1/actions/workflows/release.yml)');
+README.line('[![docker](https://img.shields.io/badge/docker-jsii%2Fsuperchain-brightgreen?logo=docker)](https://hub.docker.com/r/jsii/superchain)');
+README.line('#### Part2 ([CDK App])');
+README.line('[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)');
+README.line('[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-2)');
+README.line('[![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-2/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-2/actions/workflows/build.yml)');
+README.line('#### Part3 ([CDK Pipelines App])');
+README.line('[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)');
+README.line('[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-3)');
+README.line('[![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml)');
+
+README.line('## Part 1');
+README.line('## References');
+README.line('- [CDK Getting Started]');
+README.line('- [CDK API Reference]');
+README.line('- [CDK Workshop]');
+README.line('- [CDK Patterns]');
+README.line('- [CDK Construct Hub]');
+README.line('- [Projen]');
+README.line('- [Projen API Reference]');
+README.line('- [Projen AWS CDK Construct Library]');
+README.line('- [Projen AWS CDK Applications]');
+README.line('- [Publish CDK Constructs]');
+README.line();
+
+README.line('[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1');
+README.line('[CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2');
+README.line('[CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3');
+README.line('[CDK Getting Started]: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html');
+README.line('[CDK API Reference]: https://docs.aws.amazon.com/cdk/api/v2/');
+README.line('[CDK Workshop]: https://cdkworkshop.com/');
+README.line('[CDK Patterns]: https://cdkpatterns.com/');
+README.line('[CDK Construct Hub]: https://constructs.dev/');
+README.line('[Projen]: https://github.com/projen/projen');
+README.line('[Projen API Reference]: https://projen.io/api/API.html');
+README.line('[Projen AWS CDK Construct Library]: https://projen.io/awscdk-construct.html');
+README.line('[Projen AWS CDK Applications]: https://projen.io/awscdk-apps.html');
+README.line('[Publish CDK Constructs]: https://github.com/seeebiii/projen-test');
 
 project.synth();
