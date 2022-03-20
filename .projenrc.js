@@ -29,31 +29,26 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   // Publish to Npm
   releaseToNpm: true,
-  packageName: 'ecs-package',
+  packageName: 'fastfargate',
 
   // Publish to Pypi
   publishToPypi: {
-    distName: 'ecs-dist',
-    module: 'ecs-mod',
+    distName: 'fastfargate',
+    module: 'fastfargate',
   },
 
   // Publish to Nugget
   publishToNuget: {
     dotNetNamespace: 'userorg.userns',
-    packageId: 'userpackages.ecspackage',
+    packageId: 'fastfargate',
   },
 
-  // // Publish to Maven
-  // publishToMaven: {
-  //   mavenGroupId: '<your_package_group_id',
-  //   mavenArtifactId: '<your_package_target_id>',
-  //   javaPackage: '<your_java_package>',
-  // },
-
-  // publishToGo: {
-  //   moduleName: "<your_moduleName>",
-  // },
-
+  // Publish to Maven
+  publishToMaven: {
+    mavenGroupId: 'io.github.AymanZahran',
+    mavenArtifactId: 'fastfargate',
+    javaPackage: 'fastfargate',
+  },
 });
 
 project.gitpod.addDockerImage({

@@ -2,39 +2,39 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### MyEcsConstruct <a name="MyEcsConstruct" id="ecs-package.MyEcsConstruct"></a>
+### MyEcsConstruct <a name="MyEcsConstruct" id="fastfargate.MyEcsConstruct"></a>
 
-#### Initializers <a name="Initializers" id="ecs-package.MyEcsConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="fastfargate.MyEcsConstruct.Initializer"></a>
 
 ```typescript
-import { MyEcsConstruct } from 'ecs-package'
+import { MyEcsConstruct } from 'fastfargate'
 
 new MyEcsConstruct(scope: Construct, id: string, props: MyEcsProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#ecs-package.MyEcsConstruct.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsConstruct.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#ecs-package.MyEcsProps">MyEcsProps</a></code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsConstruct.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsConstruct.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#fastfargate.MyEcsProps">MyEcsProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="ecs-package.MyEcsConstruct.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="fastfargate.MyEcsConstruct.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="ecs-package.MyEcsConstruct.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="fastfargate.MyEcsConstruct.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="ecs-package.MyEcsConstruct.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="fastfargate.MyEcsConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#ecs-package.MyEcsProps">MyEcsProps</a>
+- *Type:* <a href="#fastfargate.MyEcsProps">MyEcsProps</a>
 
 ---
 
@@ -42,11 +42,11 @@ new MyEcsConstruct(scope: Construct, id: string, props: MyEcsProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#ecs-package.MyEcsConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#fastfargate.MyEcsConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="ecs-package.MyEcsConstruct.toString"></a>
+##### `toString` <a name="toString" id="fastfargate.MyEcsConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -58,21 +58,21 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#ecs-package.MyEcsConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#fastfargate.MyEcsConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="ecs-package.MyEcsConstruct.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="fastfargate.MyEcsConstruct.isConstruct"></a>
 
 ```typescript
-import { MyEcsConstruct } from 'ecs-package'
+import { MyEcsConstruct } from 'fastfargate'
 
 MyEcsConstruct.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="ecs-package.MyEcsConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="fastfargate.MyEcsConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -84,11 +84,11 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#ecs-package.MyEcsConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#fastfargate.MyEcsConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="ecs-package.MyEcsConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="fastfargate.MyEcsConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -103,12 +103,12 @@ The tree node.
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### MyEcsProps <a name="MyEcsProps" id="ecs-package.MyEcsProps"></a>
+### MyEcsProps <a name="MyEcsProps" id="fastfargate.MyEcsProps"></a>
 
-#### Initializer <a name="Initializer" id="ecs-package.MyEcsProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="fastfargate.MyEcsProps.Initializer"></a>
 
 ```typescript
-import { MyEcsProps } from 'ecs-package'
+import { MyEcsProps } from 'fastfargate'
 
 const myEcsProps: MyEcsProps = { ... }
 ```
@@ -117,16 +117,16 @@ const myEcsProps: MyEcsProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#ecs-package.MyEcsProps.property.cpu">cpu</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.desiredCount">desiredCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.dockerDirAsset">dockerDirAsset</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.dockerFileAsset">dockerFileAsset</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.maxAzs">maxAzs</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#ecs-package.MyEcsProps.property.memoryLimitMiB">memoryLimitMiB</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsProps.property.cpu">cpu</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsProps.property.desiredCount">desiredCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsProps.property.dockerDirAsset">dockerDirAsset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsProps.property.dockerFileAsset">dockerFileAsset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsProps.property.maxAzs">maxAzs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#fastfargate.MyEcsProps.property.memoryLimitMiB">memoryLimitMiB</a></code> | <code>number</code> | *No description.* |
 
 ---
 
-##### `cpu`<sup>Required</sup> <a name="cpu" id="ecs-package.MyEcsProps.property.cpu"></a>
+##### `cpu`<sup>Required</sup> <a name="cpu" id="fastfargate.MyEcsProps.property.cpu"></a>
 
 ```typescript
 public readonly cpu: number;
@@ -136,7 +136,7 @@ public readonly cpu: number;
 
 ---
 
-##### `desiredCount`<sup>Required</sup> <a name="desiredCount" id="ecs-package.MyEcsProps.property.desiredCount"></a>
+##### `desiredCount`<sup>Required</sup> <a name="desiredCount" id="fastfargate.MyEcsProps.property.desiredCount"></a>
 
 ```typescript
 public readonly desiredCount: number;
@@ -146,7 +146,7 @@ public readonly desiredCount: number;
 
 ---
 
-##### `dockerDirAsset`<sup>Required</sup> <a name="dockerDirAsset" id="ecs-package.MyEcsProps.property.dockerDirAsset"></a>
+##### `dockerDirAsset`<sup>Required</sup> <a name="dockerDirAsset" id="fastfargate.MyEcsProps.property.dockerDirAsset"></a>
 
 ```typescript
 public readonly dockerDirAsset: string;
@@ -156,7 +156,7 @@ public readonly dockerDirAsset: string;
 
 ---
 
-##### `dockerFileAsset`<sup>Required</sup> <a name="dockerFileAsset" id="ecs-package.MyEcsProps.property.dockerFileAsset"></a>
+##### `dockerFileAsset`<sup>Required</sup> <a name="dockerFileAsset" id="fastfargate.MyEcsProps.property.dockerFileAsset"></a>
 
 ```typescript
 public readonly dockerFileAsset: string;
@@ -166,7 +166,7 @@ public readonly dockerFileAsset: string;
 
 ---
 
-##### `maxAzs`<sup>Required</sup> <a name="maxAzs" id="ecs-package.MyEcsProps.property.maxAzs"></a>
+##### `maxAzs`<sup>Required</sup> <a name="maxAzs" id="fastfargate.MyEcsProps.property.maxAzs"></a>
 
 ```typescript
 public readonly maxAzs: number;
@@ -176,7 +176,7 @@ public readonly maxAzs: number;
 
 ---
 
-##### `memoryLimitMiB`<sup>Required</sup> <a name="memoryLimitMiB" id="ecs-package.MyEcsProps.property.memoryLimitMiB"></a>
+##### `memoryLimitMiB`<sup>Required</sup> <a name="memoryLimitMiB" id="fastfargate.MyEcsProps.property.memoryLimitMiB"></a>
 
 ```typescript
 public readonly memoryLimitMiB: number;
