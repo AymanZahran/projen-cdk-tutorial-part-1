@@ -51,7 +51,6 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
-!/./.gitpod.Dockerfile
 !/src/index.ts
 !/test/main.test.ts
 !/.github/workflows/upgrade-main.yml
