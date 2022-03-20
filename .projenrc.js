@@ -155,12 +155,23 @@ README.line('[![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3
 
 README.line('## Part 1');
 README.line('![projen-cdk-tutorial-part-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1.png)');
+README.line();
+README.line('![projen-cdk-tutorial-part-1-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1-build.PNG)');
+README.line();
+README.line('![projen-cdk-tutorial-part-1-release](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1-release.PNG)');
+
+README.line();
+README.line('## License');
+README.line('The [Apache-2.0] license');
+
+README.line();
 README.line('## References');
 README.line('- [CDK Getting Started]');
 README.line('- [CDK API Reference]');
 README.line('- [CDK Workshop]');
 README.line('- [CDK Patterns]');
 README.line('- [CDK Construct Hub]');
+README.line('- [AWS Solutions Constructs]');
 README.line('- [Projen]');
 README.line('- [Projen API Reference]');
 README.line('- [Projen AWS CDK Construct Library]');
@@ -171,11 +182,13 @@ README.line();
 README.line('[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1');
 README.line('[CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2');
 README.line('[CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3');
+README.line('[Apache-2.0]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1/blob/master/LICENSE');
 README.line('[CDK Getting Started]: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html');
 README.line('[CDK API Reference]: https://docs.aws.amazon.com/cdk/api/v2/');
 README.line('[CDK Workshop]: https://cdkworkshop.com/');
 README.line('[CDK Patterns]: https://cdkpatterns.com/');
 README.line('[CDK Construct Hub]: https://constructs.dev/');
+README.line('[AWS Solutions Constructs]: https://docs.aws.amazon.com/solutions/latest/constructs/welcome.html');
 README.line('[Projen]: https://github.com/projen/projen');
 README.line('[Projen API Reference]: https://projen.io/api/API.html');
 README.line('[Projen AWS CDK Construct Library]: https://projen.io/awscdk-construct.html');
