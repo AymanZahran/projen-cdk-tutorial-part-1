@@ -1,5 +1,6 @@
 {
   "files": [
+    "./.gitpod.Dockerfile",
     ".eslintrc.json",
     ".gitattributes",
     ".github/pull_request_template.md",
