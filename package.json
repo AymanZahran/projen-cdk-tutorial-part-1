@@ -119,9 +119,9 @@
     "outdir": "dist",
     "targets": {
       "java": {
-        "package": "io.github.aymanzahran.project.fastfargate",
+        "package": "io.github.aymanzahran.fastfargate",
         "maven": {
-          "groupId": "io.github.aymanzahran.project",
+          "groupId": "io.github.aymanzahran",
           "artifactId": "fastfargate"
         }
       },
