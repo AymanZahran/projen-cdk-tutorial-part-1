@@ -19,7 +19,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   // Build Trigger
   buildWorkflow: true,
-  buildWorkflowTriggers: 'push',
+  buildWorkflowTriggers: { pullRequest: {}, push: {} },
   // Release Trigger
   release: true,
   releaseEveryCommit: true,

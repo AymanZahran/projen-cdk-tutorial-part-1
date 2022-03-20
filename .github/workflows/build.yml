@@ -2,10 +2,8 @@
 
 name: build
 on:
-  "0": p
-  "1": u
-  "2": s
-  "3": h
+  pull_request: {}
+  push: {}
 jobs:
   build:
     runs-on: ubuntu-latest
