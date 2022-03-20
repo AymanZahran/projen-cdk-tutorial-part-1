@@ -8,26 +8,23 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/AymanZahran/projen-cdk-tutorial-part-1.git',
   description: 'This package is for Projen Demo',
 
-  // Add License
+  // Add License, Gitpod, Docgen, Eslint, Mergify
   licensed: true,
   license: 'Apache-2.0',
-
-  // Add gitpod.yml
   gitpod: true,
-
-  // Generate API Doc
   docgen: true,
   docgenFilePath: 'API.md',
+  eslint: true,
+  mergify: true,
 
-  // Automation Trigger
+  // Build Trigger
+  buildWorkflow: true,
+  buildWorkflowTriggers: 'push',
+  // Release Trigger
+  release: true,
   releaseEveryCommit: true,
-  // autoApproveUpgrades: true,
-  // autoApproveOptions: { allowedUsernames: ['AymanZahran'] },
   defaultReleaseBranch: 'master',
   releaseWorkflow: true,
-
-  // Publish to Git Release
-  release: true,
 
   // Publish to Npm
   releaseToNpm: true,
@@ -153,7 +150,7 @@ README.line('[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready-
 README.line('[![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml)');
 
 README.line('## Part 1');
-README.line('![projen-cdk-tutorial-part-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1.png)')
+README.line('![projen-cdk-tutorial-part-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1.png)');
 README.line('## References');
 README.line('- [CDK Getting Started]');
 README.line('- [CDK API Reference]');

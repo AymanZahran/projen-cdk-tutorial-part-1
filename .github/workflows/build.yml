@@ -2,8 +2,10 @@
 
 name: build
 on:
-  pull_request: {}
-  workflow_dispatch: {}
+  "0": p
+  "1": u
+  "2": s
+  "3": h
 jobs:
   build:
     runs-on: ubuntu-latest
