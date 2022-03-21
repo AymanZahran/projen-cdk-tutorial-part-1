@@ -1,6 +1,5 @@
 {
-  "name": "fastfargate",
-  "description": "This package is for Projen Demo",
+  "name": "projen-cdk-tutorial-part-1",
   "repository": {
     "type": "git",
     "url": "https://github.com/AymanZahran/projen-cdk-tutorial-part-1.git"
@@ -17,10 +16,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
-    "package:dotnet": "npx projen package:dotnet",
-    "package:java": "npx projen package:java",
     "package:js": "npx projen package:js",
-    "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
@@ -117,23 +113,7 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {
-      "java": {
-        "package": "io.github.aymanzahran.fastfargate",
-        "maven": {
-          "groupId": "io.github.aymanzahran",
-          "artifactId": "fastfargate"
-        }
-      },
-      "python": {
-        "distName": "fastfargate",
-        "module": "fastfargate"
-      },
-      "dotnet": {
-        "namespace": "fastfargate",
-        "packageId": "fastfargate"
-      }
-    },
+    "targets": {},
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
