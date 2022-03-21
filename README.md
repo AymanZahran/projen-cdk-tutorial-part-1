@@ -18,6 +18,42 @@
 ## Part 1
 ![projen-cdk-tutorial-part-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1.png)
 
+### Steps
+1- Add Github Secrets
+```sh
+TWINE_USERNAME
+TWINE_PASSWORD
+NPM_TOKEN
+NUGET_API_KEY
+MAVEN_USERNAME
+MAVEN_PASSWORD
+MAVEN_STAGING_PROFILE_ID
+MAVEN_GPG_PRIVATE_KEY
+MAVEN_GPG_PRIVATE_KEY_PASSPHRASE
+```
+2- Create Project locally or launch using [Gitpod]
+
+```sh
+mkdir projen-cdk-tutorial-part-1
+cd projen-cdk-tutorial-part-1
+code .
+alias pj="npx projen"
+pj new awscdk-construct
+```
+3- Configure Project
+```sh
+Add your code to .projenrc, This is the only file that will be modified. During projen it will scaffold your whole project including what you are reading right now ! :)
+```
+4- execute projen
+```sh
+pj
+```
+5- Commit & Push
+```sh
+git add .
+git commit -m "Commit"
+git push
+```
 ![projen-cdk-tutorial-part-1-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1-build.PNG)
 
 ![projen-cdk-tutorial-part-1-release](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-1-release.PNG)
@@ -41,6 +77,7 @@ The [Apache-2.0] license
 [CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1
 [CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2
 [CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
+[Gitpod]: https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-1
 [Apache-2.0]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1/blob/master/LICENSE
 [CDK Getting Started]: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
 [CDK API Reference]: https://docs.aws.amazon.com/cdk/api/v2/
