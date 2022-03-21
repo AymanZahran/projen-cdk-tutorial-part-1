@@ -44,7 +44,7 @@ pj new awscdk-construct
 ```sh
 Add your code to .projenrc, This is the only file that will be modified. During projen it will scaffold your whole project including what you are reading right now ! :)
 ```
-4- execute projen
+4- Execute projen
 ```sh
 pj
 ```
@@ -73,6 +73,9 @@ The [Apache-2.0] license
 - [Projen AWS CDK Construct Library]
 - [Projen AWS CDK Applications]
 - [Publish CDK Constructs]
+- [projen-cdk-tutorial-part-1]
+- [projen-cdk-tutorial-part-2]
+- [projen-cdk-tutorial-part-3]
 
 [CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1
 [CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2
@@ -90,3 +93,6 @@ The [Apache-2.0] license
 [Projen AWS CDK Construct Library]: https://projen.io/awscdk-construct.html
 [Projen AWS CDK Applications]: https://projen.io/awscdk-apps.html
 [Publish CDK Constructs]: https://github.com/seeebiii/projen-test
+[projen-cdk-tutorial-part-1]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1
+[projen-cdk-tutorial-part-2]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2
+[projen-cdk-tutorial-part-3]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3

@@ -182,7 +182,7 @@ README.line('3- Configure Project');
 README.line('```sh');
 README.line('Add your code to .projenrc, This is the only file that will be modified. During projen it will scaffold your whole project including what you are reading right now ! :)');
 README.line('```');
-README.line('4- execute projen');
+README.line('4- Execute projen');
 README.line('```sh');
 README.line('pj');
 README.line('```');
@@ -214,6 +214,9 @@ README.line('- [Projen API Reference]');
 README.line('- [Projen AWS CDK Construct Library]');
 README.line('- [Projen AWS CDK Applications]');
 README.line('- [Publish CDK Constructs]');
+README.line('- [projen-cdk-tutorial-part-1]');
+README.line('- [projen-cdk-tutorial-part-2]');
+README.line('- [projen-cdk-tutorial-part-3]');
 README.line();
 
 README.line('[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1');
@@ -232,5 +235,8 @@ README.line('[Projen API Reference]: https://projen.io/api/API.html');
 README.line('[Projen AWS CDK Construct Library]: https://projen.io/awscdk-construct.html');
 README.line('[Projen AWS CDK Applications]: https://projen.io/awscdk-apps.html');
 README.line('[Publish CDK Constructs]: https://github.com/seeebiii/projen-test');
+README.line('[projen-cdk-tutorial-part-1]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1');
+README.line('[projen-cdk-tutorial-part-2]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2');
+README.line('[projen-cdk-tutorial-part-3]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3');
 
 project.synth();
