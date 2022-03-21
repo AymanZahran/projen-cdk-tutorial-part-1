@@ -1,6 +1,6 @@
 {
   "name": "fastfargate",
-  "description": "This is a Demo on projen",
+  "description": "This package is for Projen Demo",
   "repository": {
     "type": "git",
     "url": "https://github.com/AymanZahran/projen-cdk-tutorial-part-1.git"

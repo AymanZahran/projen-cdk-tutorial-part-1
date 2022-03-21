@@ -6,7 +6,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   defaultReleaseBranch: 'main',
   name: 'projen-cdk-tutorial-part-1',
   repositoryUrl: 'https://github.com/AymanZahran/projen-cdk-tutorial-part-1.git',
-  description: "This is a Demo on projen",
+  description: 'This package is for Projen Demo',
 
   // Add License, Gitpod, Docgen, Eslint, Mergify
   licensed: true,
@@ -196,4 +196,3 @@ README.line('[Projen AWS CDK Applications]: https://projen.io/awscdk-apps.html')
 README.line('[Publish CDK Constructs]: https://github.com/seeebiii/projen-test');
 
 project.synth();
-
